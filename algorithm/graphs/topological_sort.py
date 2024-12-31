@@ -9,7 +9,7 @@ class ToplogicalSort:
 
     def _build(self):
         for edge in self.edges:
-            u, v = edge
+            u, v = edge[0], edge[1]
             self.graph[u].append(v)
         print('Build complete')
 

@@ -1,5 +1,6 @@
 from algorithm.graphs.centre import graph_center
 from algorithm.graphs.graph import Graph
+
 def ahu_encoding(graph, root, visited = set()):
     if not root:
         return ""
@@ -31,4 +32,4 @@ def isomorphic(graph1, graph2) -> bool:
 if __name__ == '__main__':
     edges = [[1, 2], [3, 4], [5, 4], [3, 2], [3, 5]]
     graph1 = Graph(edges)
-    print(ahu_encoding(graph, 3))
+    print(ahu_encoding(graph1, 3))
